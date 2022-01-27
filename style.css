@@ -1,0 +1,137 @@
+html body{
+    padding: 0;
+    margin: 0;
+    line-height: 1.65;
+    padding-bottom: 500px;
+    background-color:#ddd;
+}
+/* part 1 */
+.container-satu{
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+.sidebar1{
+    flex: 5;
+    order: 2;
+}
+.sidebar2{
+    flex: 1;
+    order: 1;
+}
+.sidebar2 ul li{
+    list-style: none;
+}
+.sidebar3{
+    flex: 1;
+    order: 3;
+}
+
+/* dua responsive */
+.container-dua{
+    max-width: 800px;
+    margin: 50px auto;
+}
+.layanan{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.layanan.satu{
+    background-color: rgb(245, 68, 68);
+    box-sizing: border-box;
+}
+.layanan.dua{
+    background-color: rgb(72, 248, 72);
+    box-sizing: border-box;
+}
+.layanan.tiga{
+    background-color: rgb(102, 102, 240);
+    box-sizing: border-box;
+}
+/* latihan responsive gambar */
+.container-tiga{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.thumbnail{
+    width: 50%;
+    }
+.thumbnail img{
+    width: 100%;
+}
+
+/* latihan 4 */
+.container-empat{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+.card{
+    padding: 5px;
+    border: brown 1px solid;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+    
+    
+}
+.card .header{
+    height: 150px;
+    background-color: #666;
+}
+.card .content{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.card.besar{
+    transform: scale(1.1);
+}
+.card.besar:hover{
+    transform: scale(1);
+}
+
+
+.container5{
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    margin: 50px auto;
+    display: flex;
+
+}
+.kotak{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: auto;
+    display: flex;
+}
+span{
+    margin: auto;
+}
+
+
+
+
+
+@media (min-width: 600px){
+    .container-dua{
+        display: flex;
+    justify-content: space-between;
+    }
+    .layanan{
+        width: 30%; 
+    }
+    .thumbnail{
+        width: 25%;
+    }
+}
